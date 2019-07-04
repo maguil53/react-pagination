@@ -1,24 +1,20 @@
 import React from 'react';
 
 class CardComponent extends React.Component {
-    constructor(props) {
-        super(props);
-    }
-
 
     render() {
-        const articles = this.props.articles;
-        const cards = articles.map((article) => {
-            return(
-                <div key={article.id}>
-                    <h1>{article.author}</h1>
-                    <p>{article.content}</p>
-                </div>
-            );
-        });
-
-        return (cards)
+        return (
+            <div>
+                {/* <h1>Title:</h1>
+                <p>{this.props.title}</p> */}
+                <h2>Author:</h2>
+                <p>{this.props.author}</p>
+                {/* <h2>Content:</h2>
+                <p>{this.props.content}</p> */}
+            </div>
+        )
     }
+
 }
 
 export default CardComponent;

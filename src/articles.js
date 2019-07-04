@@ -1,4 +1,4 @@
-const data = [
+const articles = [
     {
         id: 1,
         author: "Marco",
@@ -53,6 +53,51 @@ const data = [
         "dolores molestias alias.Voluptatibus, aut dolor molestiae ullam accusantium" +
         "error atque veniam libero obcaecati!"
     },
+    {
+        id: 7,
+        author: "Kaa",
+        title: "Don't know what to say",
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit." +
+        "Facilis est reprehenderit cupiditate consequatur totam officiis tempor" +
+        "dolores molestias alias.Voluptatibus, aut dolor molestiae ullam accusantium" +
+        "error atque veniam libero obcaecati!"
+    },
+    {
+        id: 8,
+        author: "Karina",
+        title: "Don't know what to say",
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit." +
+        "Facilis est reprehenderit cupiditate consequatur totam officiis tempor" +
+        "dolores molestias alias.Voluptatibus, aut dolor molestiae ullam accusantium" +
+        "error atque veniam libero obcaecati!"
+    },
+    {
+        id: 9,
+        author: "Karina",
+        title: "Don't know what to say",
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit." +
+        "Facilis est reprehenderit cupiditate consequatur totam officiis tempor" +
+        "dolores molestias alias.Voluptatibus, aut dolor molestiae ullam accusantium" +
+        "error atque veniam libero obcaecati!"
+    },
+    {
+        id: 10,
+        author: "Kara",
+        title: "Don't know what to say",
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit." +
+        "Facilis est reprehenderit cupiditate consequatur totam officiis tempor" +
+        "dolores molestias alias.Voluptatibus, aut dolor molestiae ullam accusantium" +
+        "error atque veniam libero obcaecati!"
+    },
+    {
+        id: 11,
+        author: "Ria",
+        title: "Don't know what to say",
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit." +
+        "Facilis est reprehenderit cupiditate consequatur totam officiis tempor" +
+        "dolores molestias alias.Voluptatibus, aut dolor molestiae ullam accusantium" +
+        "error atque veniam libero obcaecati!"
+    },
   ]
 
-export {data};
+export {articles};
