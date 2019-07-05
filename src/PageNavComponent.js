@@ -1,4 +1,5 @@
 import React from 'react';
+import './PageNav.css';
 
 class paginateComponent extends React.Component {
     // constructor is just used to initialize your values.
