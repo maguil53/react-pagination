@@ -138,13 +138,16 @@ class App extends React.Component {
 
     return (
       <div className="App">
-        <header className="App-header">
-        </header>
-        {/* <p>This should be 11....{this.state.numOfArticles}</p> */}
-        {cards}
-        <p>firstArticleIndex{this.state.firstArticleIndex}</p>
-        <p>lastArticleIndex{this.state.lastArticleIndex}</p>
-        <PageNavComponent numOfArticles={this.state.numOfArticles} onClick={i => this.updateArticles(i)} />
+        {/* <header className="App-header">
+        </header> */}
+
+        <div className="cards">
+          {cards}
+        </div>
+
+        <div className="page-nav">
+          <PageNavComponent numOfArticles={this.state.numOfArticles} onClick={i => this.updateArticles(i)} />
+        </div>
       </div>
     )
   }
