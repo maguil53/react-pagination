@@ -12,6 +12,12 @@ button {
     border-color .18s ease-in-out;
 }
 
+.highlighted {
+    background-color: #17a2b8;
+    color: #f5eeee;
+    border: 1px solid #17a2b8;
+}
+
 button:focus {outline:0;}
 
 button:hover {
