@@ -19,6 +19,8 @@ html,body {
 
 .cards {
     grid-row-start: 1;
+    width: 95vw;
+    justify-self: center;   
 }
 
 .page-nav {

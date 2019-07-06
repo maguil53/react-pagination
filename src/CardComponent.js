@@ -1,16 +1,20 @@
 import React from 'react';
+import './CardComponent.css'
 
 class CardComponent extends React.Component {
 
     render() {
         return (
-            <div>
-                {/* <h1>Title:</h1>
-                <p>{this.props.title}</p> */}
-                <h2>Author:</h2>
-                <p>{this.props.author}</p>
-                {/* <h2>Content:</h2>
-                <p>{this.props.content}</p> */}
+            <div className="card">
+                <div className="title">
+                    <h1>{this.props.title}</h1>
+                </div>
+                <div className="author">
+                    <p>Author: {this.props.author}</p>
+                </div>
+                <div className="content">
+                    <p>{this.props.content}</p>
+                </div>    
             </div>
         )
     }
