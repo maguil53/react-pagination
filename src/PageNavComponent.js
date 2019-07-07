@@ -10,12 +10,10 @@ class PageNavComponent extends React.Component {
 
     constructor(props) {
         super(props);
-
         // current is used to figure out which button is currently selected.
         this.state = {
             current: 0,
         }
-
         // Need this so handleClick knows what this.setState() is referring to
         this.handleClick = this.handleClick.bind(this);
     }
@@ -30,9 +28,7 @@ class PageNavComponent extends React.Component {
             >
                 {buttonNum}
             </button>
-            
         );
-        
     }
 
     /*  
@@ -63,10 +59,14 @@ class PageNavComponent extends React.Component {
             numOfButtons++;
         }
 
+        /*
+            When calling createButton(), only pass true to the button
+            that is currently selected (hence, i === this.state.current).
+            Passing true will give that button element the 'highlighted' class.
+        */
         let i = 0;
         for(i; i < numOfButtons; i++) {
             if(i === this.state.current) {
-                // Highlight this button.
                 navButtons.push(this.createButton(i + 1, true));
             } else {
                 navButtons.push(this.createButton(i + 1, false));

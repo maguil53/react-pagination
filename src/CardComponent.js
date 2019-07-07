@@ -6,13 +6,17 @@ class CardComponent extends React.Component {
     render() {
         return (
             <div className="card">
-                <div className="title">
-                    <h1>{this.props.title}</h1>
+                <div className="title-container">
+                    <p className="title">{this.props.title}</p>
                 </div>
-                <div className="author">
-                    <p>Author: {this.props.author}</p>
+                <div className="author-container">
+                    <p className="author">Author: {this.props.author}</p>
                 </div>
-                <div className="content">
+
+                
+
+                <div className="content-container">
+                    <div className="line"></div>
                     <p>{this.props.content}</p>
                 </div>    
             </div>
