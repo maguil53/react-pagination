@@ -251,6 +251,102 @@ const articles = [
         "dolores molestias alias.Voluptatibus, aut dolor molestiae ullam accusantium" +
         "error atque veniam libero obcaecati!"
     },
+    {
+        id: 22,
+        author: "Steven",
+        title: "Why Kotlin is better than Java",
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit." +
+        "Facilis est reprehenderit cupiditate cbus, aut dolor molestiae tempor" +
+        "Facilis est reprehenderit cupiditate consequatur totam officiis tempor" +
+        "Facilis bus, aut dolor molestiae consequatur totam officiis tempor" +
+        "Facilis est reprehenderit cupiditate consequatur totam officiis tempor" +
+        "dolores molestias alias.Voluptatibus, aut dolor molestiae ullam accusantium" +
+        "error atque veniam libero obcaecati!"
+    },
+    {
+        id: 23,
+        author: "Steven",
+        title: "Why Kotlin is better than Java",
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit." +
+        "Facilis est reprehenderit cupiditate cbus, aut dolor molestiae tempor" +
+        "Facilis est reprehenderit cupiditate consequatur totam officiis tempor" +
+        "Facilis bus, aut dolor molestiae consequatur totam officiis tempor" +
+        "Facilis est reprehenderit cupiditate consequatur totam officiis tempor" +
+        "dolores molestias alias.Voluptatibus, aut dolor molestiae ullam accusantium" +
+        "error atque veniam libero obcaecati!"
+    },
+    {
+        id: 24,
+        author: "Steven",
+        title: "Why Kotlin is better than Java",
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit." +
+        "Facilis est reprehenderit cupiditate cbus, aut dolor molestiae tempor" +
+        "Facilis est reprehenderit cupiditate consequatur totam officiis tempor" +
+        "Facilis bus, aut dolor molestiae consequatur totam officiis tempor" +
+        "Facilis est reprehenderit cupiditate consequatur totam officiis tempor" +
+        "dolores molestias alias.Voluptatibus, aut dolor molestiae ullam accusantium" +
+        "error atque veniam libero obcaecati!"
+    },
+    {
+        id: 25,
+        author: "Steve",
+        title: "Why Kotlin is better than Java",
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit." +
+        "Facilis est reprehenderit cupiditate cbus, aut dolor molestiae tempor" +
+        "Facilis est reprehenderit cupiditate consequatur totam officiis tempor" +
+        "Facilis bus, aut dolor molestiae consequatur totam officiis tempor" +
+        "Facilis est reprehenderit cupiditate consequatur totam officiis tempor" +
+        "dolores molestias alias.Voluptatibus, aut dolor molestiae ullam accusantium" +
+        "error atque veniam libero obcaecati!"
+    },
+    {
+        id: 26,
+        author: "Jack",
+        title: "We're hiring",
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit." +
+        "Facilis est reprehenderit cupiditate cbus, aut dolor molestiae tempor" +
+        "Facilis est reprehenderit cupiditate consequatur totam officiis tempor" +
+        "Facilis bus, aut dolor molestiae consequatur totam officiis tempor" +
+        "Facilis est reprehenderit cupiditate consequatur totam officiis tempor" +
+        "dolores molestias alias.Voluptatibus, aut dolor molestiae ullam accusantium" +
+        "error atque veniam libero obcaecati!"
+    },
+    {
+        id: 27,
+        author: "Cristian",
+        title: "Help Wanted",
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit." +
+        "Facilis est reprehenderit cupiditate cbus, aut dolor molestiae tempor" +
+        "Facilis est reprehenderit cupiditate consequatur totam officiis tempor" +
+        "Facilis bus, aut dolor molestiae consequatur totam officiis tempor" +
+        "Facilis est reprehenderit cupiditate consequatur totam officiis tempor" +
+        "dolores molestias alias.Voluptatibus, aut dolor molestiae ullam accusantium" +
+        "error atque veniam libero obcaecati!"
+    },
+    {
+        id: 28,
+        author: "Carlos",
+        title: "Get started with Haskell",
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit." +
+        "Facilis est reprehenderit cupiditate cbus, aut dolor molestiae tempor" +
+        "Facilis est reprehenderit cupiditate consequatur totam officiis tempor" +
+        "Facilis bus, aut dolor molestiae consequatur totam officiis tempor" +
+        "Facilis est reprehenderit cupiditate consequatur totam officiis tempor" +
+        "dolores molestias alias.Voluptatibus, aut dolor molestiae ullam accusantium" +
+        "error atque veniam libero obcaecati!"
+    },
+    {
+        id: 29,
+        author: "Josh",
+        title: "Top 5 technologies for Web Developers",
+        content: "Lorem ipsum dolor sit amet consectetur adipisicing elit." +
+        "Facilis est reprehenderit cupiditate cbus, aut dolor molestiae tempor" +
+        "Facilis est reprehenderit cupiditate consequatur totam officiis tempor" +
+        "Facilis bus, aut dolor molestiae consequatur totam officiis tempor" +
+        "Facilis est reprehenderit cupiditate consequatur totam officiis tempor" +
+        "dolores molestias alias.Voluptatibus, aut dolor molestiae ullam accusantium" +
+        "error atque veniam libero obcaecati!"
+    },
   ]
 
 export {articles};
