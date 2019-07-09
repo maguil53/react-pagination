@@ -1,6 +1,8 @@
 import React from 'react';
 import './PageNav.css';
 
+// ************************************
+//
 
 class PageNavComponent extends React.Component {
 
@@ -24,8 +26,8 @@ class PageNavComponent extends React.Component {
             If the number is not perfectly divisible by 5 (hasRemainder),
             then we add an extra button.
         */
-        let numOfButtons = Math.floor(this.props.numOfArticles / 5);
-        const hasRemainder = this.props.numOfArticles % 5 !== 0;
+        let numOfButtons = Math.floor(this.props.numOfArticles / this.props.articlesPerPage);
+        const hasRemainder = this.props.numOfArticles % this.props.articlesPerPage !== 0;
 
         // Need an extra button.
         if(hasRemainder) {
@@ -40,10 +42,11 @@ class PageNavComponent extends React.Component {
         let buttonNums = [];
         const numOfButtons = this.getNumOfButtons();
 
+        console.log(numOfButtons);
         if(numOfButtons > 5) {
             buttonNums.push(0,1,2,3,4);
         } else {
-            for(let i = 0; i < this.state.numOfButtons; i++){
+            for(let i = 0; i < this.getNumOfButtons(); i++){
                 buttonNums.push(i);
             }
         }
@@ -69,34 +72,66 @@ class PageNavComponent extends React.Component {
         This will call the callback from the App component and
         update the current so React knows which button to highlight next.
     */
+
+    /**
+     * There's a bug here whenever this.props.articlesPerPage > 7
+     * However,
+     *  this bug only shows up when we click on a button (NOT when we
+     *  click on "next" button)
+     * 
+     *  Found the problem....
+     *      there are less numberOfButtons the more
+     *      articlesPerPage you have.
+     * 
+     *      This results in entering the "else-if" statement
+     */
     handleClick(buttonIndex) {
         let updatedCurrentButtons = [];
         const numOfButtons = this.getNumOfButtons();
         
         /*
-            We're using 5 here bc of a different reason than
-            below. This is sent back to App component's 
-            updateArticles() bc this let's us figure out what 5
-            articles to display. (Bc we only want to show 5 articles
+            This is sent back to App component's 
+            updateArticles() bc this let's us figure out what
+            number of articlesPerPage to display. 
+            (Bc we only want to show x # of articles
             at a time)
         */
-        const lastArticleIndex = (buttonIndex + 1) * 5;
+        const lastArticleIndex = (buttonIndex + 1) * this.props.articlesPerPage;
         this.props.onClick(lastArticleIndex);
 
+        console.log("numOfButtons");
+        console.log(numOfButtons);
+        console.log("buttonIndex");
+        console.log(buttonIndex);
         // We're using 5 here bc we only want to display 5 buttons
         // before using Next and Prev buttons.
         if(buttonIndex < numOfButtons - 5) {
+            
             // If user clicks 1 (index 0), then 
             // updatedCurrentButton = [0, 1, 2, 3, 4] AKA (1, 2, 3, 4, 5)
             for(let i = 0; i < 5; i++) {
                 updatedCurrentButtons.push(buttonIndex + i);
             }
         } else if (buttonIndex >= numOfButtons - 5) {
+            console.log("In!");
             // Display the last 5 buttons.
             const fifthToLast = numOfButtons - 5;
-            for(let i = 0; i < 5; i++) {
-                updatedCurrentButtons.push(fifthToLast + i);
+
+            // if fifthToLast < 0 
+            // then don't update currentButtons.
+            /**
+             * We do this because fifth to last could be -1
+             * if numOfButtons < 5, due to articlesPerPage being
+             * a high number (Ex: Greater than 7)
+             */
+            if(fifthToLast < 0) {
+                updatedCurrentButtons = this.state.currentButtons;
+            } else {
+                for(let i = 0; i < 5; i++) {
+                    updatedCurrentButtons.push(fifthToLast + i);
+                }
             }
+            
             
         }
         
@@ -114,20 +149,18 @@ class PageNavComponent extends React.Component {
 
         // Using updatedCurrent, we need to make sure to call the callback with
         // the new list of articles we want to display.
-        const lastArticleIndex = (updatedCurrent + 1) * 5;
+        const lastArticleIndex = (updatedCurrent + 1) * this.props.articlesPerPage;
         this.props.onClick(lastArticleIndex);
         /*
          *  If the user clicks the "next" button, but we're already
          *  displaying the last 5 buttonss possible, then only update current.
          */
         if(this.state.current < this.getNumOfButtons() - 5) {
-            console.log("True!");
             this.setState({
                 current: updatedCurrent,
                 currentButtons: updatedCurrentButtons,
             });
         } else {
-            console.log("False!");
             this.setState({
                 current: updatedCurrent,
             });
@@ -136,15 +169,22 @@ class PageNavComponent extends React.Component {
         
     }
 
-
+    // ********* The Bug is here
+    // Once we reach 6,7,8, or even 9....we don't see
+    // the next buttons down (5,4,3,2,1)... 
+    // And I'm pretty sure the problem is here somewhere
     decrementButton() {
         const updatedCurrentButtons = this.state.currentButtons.map(x => x - 1);
         const updatedCurrent = this.state.current - 1;
 
-        const lastArticleIndex = (updatedCurrent + 1) * 5;
+        const lastArticleIndex = (updatedCurrent + 1) * this.props.articlesPerPage;
         this.props.onClick(lastArticleIndex);
-
-        if(this.state.current > 1) {
+        
+        // ALMOST FIXED IT!!!
+        // If the first item in updatedCurrentButtons === -1
+        // Then we just update current because we don't want to
+        // have a button display "0" or "-1"
+        if(updatedCurrentButtons[0] === -1) {
             // currentButtons may contain negative values if they keep
             // clicking "previous" button.
             this.setState({
@@ -174,8 +214,7 @@ class PageNavComponent extends React.Component {
             );
         }
            
-        console.log("currentBUttons");
-        console.log(this.state.currentButtons);
+
         // Dynamically create buttons based on currentButtons 
         this.state.currentButtons.forEach(index => {
             if(index === this.state.current) {

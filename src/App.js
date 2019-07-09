@@ -4,6 +4,8 @@ import { articles } from './articles.js'
 import CardComponent from './CardComponent';
 import PageNavComponent from './PageNavComponent';
 
+// ****************************************
+
 // *******************************
 // Later on we need to fix the hardcoded "5" value
 // and store it in a variable somewhere just so the developer
@@ -20,7 +22,6 @@ class App extends React.Component {
   // should belong to this.state!
   constructor(props) {
     super(props);
-
     /*
       numOfArticles is inside our state object because PageNavComponent
       needs to re-render the number of buttons to display if we get a reponse
@@ -34,7 +35,9 @@ class App extends React.Component {
         If the number of articles is greater than 5, then
         get first 5 articles. Else, get what we can.
       */
-      lastArticleIndex: (articles.length > 5) ? 5 : articles.length - 1,
+      lastArticleIndex: (
+        (articles.length > this.props.articlesPerPage) ? 
+          this.props.articlesPerPage : articles.length - 1),
     }
 
     this.updateArticles = this.updateArticles.bind(this);
@@ -50,7 +53,7 @@ class App extends React.Component {
   updateArticles(lastIndex) {
     // Called from createButton() in PageNavComponent
     this.setState({
-      firstArticleIndex: lastIndex - 5,
+      firstArticleIndex: lastIndex - this.props.articlesPerPage,
       lastArticleIndex: lastIndex
     });
 
@@ -87,7 +90,11 @@ class App extends React.Component {
         </div>
 
         <div className="page-nav">
-          <PageNavComponent numOfArticles={this.state.numOfArticles} onClick={i => this.updateArticles(i)} />
+          <PageNavComponent
+            numOfArticles={this.state.numOfArticles}
+            onClick={i => this.updateArticles(i)}
+            articlesPerPage={this.props.articlesPerPage}
+          />
         </div>
       </div>
     )
