@@ -133,8 +133,8 @@ const articles = [
     },
     {
         id: 12,
-        author: "Steven",
-        title: "Why Kotlin is better than Java",
+        author: "Janet",
+        title: "Earthquakes in California",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit." +
         "Facilis est reprehenderit cupiditate cbus, aut dolor molestiae tempor" +
         "Facilis est reprehenderit cupiditate consequatur totam officiis tempor" +
@@ -145,8 +145,8 @@ const articles = [
     },
     {
         id: 13,
-        author: "Steven",
-        title: "Why Kotlin is better than Java",
+        author: "Sue",
+        title: "What you need in order to become a developer",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit." +
         "Facilis est reprehenderit cupiditate cbus, aut dolor molestiae tempor" +
         "Facilis est reprehenderit cupiditate consequatur totam officiis tempor" +
@@ -157,8 +157,8 @@ const articles = [
     },
     {
         id: 14,
-        author: "Steven",
-        title: "Why Kotlin is better than Java",
+        author: "Joshua",
+        title: "Buy my stuff",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit." +
         "Facilis est reprehenderit cupiditate cbus, aut dolor molestiae tempor" +
         "Facilis est reprehenderit cupiditate consequatur totam officiis tempor" +
@@ -181,8 +181,8 @@ const articles = [
     },
     {
         id: 16,
-        author: "Steven",
-        title: "Why Kotlin is better than Java",
+        author: "Noah",
+        title: "The end is coming!",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit." +
         "Facilis est reprehenderit cupiditate cbus, aut dolor molestiae tempor" +
         "Facilis est reprehenderit cupiditate consequatur totam officiis tempor" +
@@ -193,8 +193,8 @@ const articles = [
     },
     {
         id: 17,
-        author: "Steven",
-        title: "Why Kotlin is better than Java",
+        author: "Max",
+        title: "Benefits of taking a cold shower",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit." +
         "Facilis est reprehenderit cupiditate cbus, aut dolor molestiae tempor" +
         "Facilis est reprehenderit cupiditate consequatur totam officiis tempor" +
@@ -205,8 +205,8 @@ const articles = [
     },
     {
         id: 18,
-        author: "Steven",
-        title: "Why Kotlin is better than Java",
+        author: "Jess",
+        title: "Ways to stay alert without coffee",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit." +
         "Facilis est reprehenderit cupiditate cbus, aut dolor molestiae tempor" +
         "Facilis est reprehenderit cupiditate consequatur totam officiis tempor" +
@@ -217,8 +217,8 @@ const articles = [
     },
     {
         id: 19,
-        author: "Steven",
-        title: "Why Kotlin is better than Java",
+        author: "Cesar",
+        title: "New technologies for machine learning",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit." +
         "Facilis est reprehenderit cupiditate cbus, aut dolor molestiae tempor" +
         "Facilis est reprehenderit cupiditate consequatur totam officiis tempor" +
@@ -229,8 +229,8 @@ const articles = [
     },
     {
         id: 20,
-        author: "Steven",
-        title: "Why Kotlin is better than Java",
+        author: "Nancy",
+        title: "Some Title",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit." +
         "Facilis est reprehenderit cupiditate cbus, aut dolor molestiae tempor" +
         "Facilis est reprehenderit cupiditate consequatur totam officiis tempor" +
@@ -241,8 +241,8 @@ const articles = [
     },
     {
         id: 21,
-        author: "Steven",
-        title: "Why Kotlin is better than Java",
+        author: "Larry",
+        title: "Now Hiring!",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit." +
         "Facilis est reprehenderit cupiditate cbus, aut dolor molestiae tempor" +
         "Facilis est reprehenderit cupiditate consequatur totam officiis tempor" +
@@ -253,8 +253,8 @@ const articles = [
     },
     {
         id: 22,
-        author: "Steven",
-        title: "Why Kotlin is better than Java",
+        author: "Sergey",
+        title: "Google I/O 2019 Recap",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit." +
         "Facilis est reprehenderit cupiditate cbus, aut dolor molestiae tempor" +
         "Facilis est reprehenderit cupiditate consequatur totam officiis tempor" +
@@ -265,8 +265,8 @@ const articles = [
     },
     {
         id: 23,
-        author: "Steven",
-        title: "Why Kotlin is better than Java",
+        author: "Mark",
+        title: "Why you should trust Facebook",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit." +
         "Facilis est reprehenderit cupiditate cbus, aut dolor molestiae tempor" +
         "Facilis est reprehenderit cupiditate consequatur totam officiis tempor" +
@@ -277,8 +277,8 @@ const articles = [
     },
     {
         id: 24,
-        author: "Steven",
-        title: "Why Kotlin is better than Java",
+        author: "Elon",
+        title: "Electric cars are the future",
         content: "Lorem ipsum dolor sit amet consectetur adipisicing elit." +
         "Facilis est reprehenderit cupiditate cbus, aut dolor molestiae tempor" +
         "Facilis est reprehenderit cupiditate consequatur totam officiis tempor" +
